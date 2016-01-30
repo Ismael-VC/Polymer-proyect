@@ -1,0 +1,49 @@
+<!--
+Instalar esto!
+
+sudo npm install http-server -g
+bower install --save Polymer-project/Polymer
+bower install --save PolymerElements/paper-materials
+bower install --save PolymerElements/iron-input
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-material/paper-material.html">
+<link rel="import" href="../bower_components/iron-input/iron-input.html">
+
+<dom-module id="bind-element">
+
+<template>
+<paper-material elevation="5">
+    <p>
+        El nombre es  <strong>{{nombre}}</strong>
+        <br>
+        La edad que tiene: <span>{{edad}}</span>
+        <br>
+        El apodo es: <span>{{apodo}}</span>
+    </p>
+    <input is="iron-input" placeholder="Escribe el apdodo" bind-value="{{apodo}}">
+</paper-material>
+</template>
+
+<script>
+    Polymer({
+        is: "bind-element",
+        properties: {
+            nombre: {
+                type: String,
+                value: "Ismael"
+            },
+            edad: {
+                type: String,
+                value: "42"
+            },
+            apodo: {
+                type: String,
+                value: "Ninguno"
+            }
+        }
+    })
+</script>
+
+</dom-module>

@@ -1,0 +1,24 @@
+{
+  "name": "components",
+  "authors": [
+    "Ismael Venegas Castelló <ismael.vc1337@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer-project/Polymer#^1.2.4",
+    "paper-material": "PolymerElements/paper-material#^1.0.6",
+    "iron-input": "PolymerElements/iron-input#^1.0.8"
+  }
+}
